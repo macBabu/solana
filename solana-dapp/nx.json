@@ -10,11 +10,6 @@
     "sharedGlobals": []
   },
   "targetDefaults": {
-    "@nx/next:build": {
-      "cache": true,
-      "dependsOn": ["^build"],
-      "inputs": ["production", "^production"]
-    },
     "@nx/eslint:lint": {
       "cache": true,
       "inputs": [
@@ -26,8 +21,17 @@
     }
   },
   "generators": {
-    "@nx/next": {
+    "@nx/react": {
       "application": {
+        "babel": true,
+        "style": "css",
+        "linter": "eslint",
+        "bundler": "webpack"
+      },
+      "component": {
+        "style": "css"
+      },
+      "library": {
         "style": "css",
         "linter": "eslint"
       }
