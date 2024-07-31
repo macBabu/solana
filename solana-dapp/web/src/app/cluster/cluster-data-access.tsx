@@ -9,10 +9,10 @@ export interface Cluster {
   network?: ClusterNetwork;
 }
 export enum ClusterNetwork {
-  Mainnet = 'mainnet-beta',
-  Testnet = 'testnet',
+  // Mainnet = 'mainnet-beta',
+  // Testnet = 'testnet',
   Devnet = 'devnet',
-  Custom = 'custom',
+  // Custom = 'custom',
 }
 
 export interface ClusterProviderContext {
